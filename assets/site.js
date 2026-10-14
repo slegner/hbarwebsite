@@ -2,7 +2,7 @@
 // Each page sets <body data-page="..."> to highlight its nav link.
 
 const NAV = [
-  { page: "home", href: "index.html", en: "Home", hans: "首页", hant: "首頁" },
+  { page: "home", href: "./", en: "Home", hans: "首页", hant: "首頁" },
   { page: "about", href: "about.html", en: "About", hans: "关于我们", hant: "關於我們" },
   { page: "videos", href: "videos.html", en: "Videos", hans: "视频", hant: "影片" },
   { page: "contact", href: "contact.html", en: "Contact", hans: "联系我们", hant: "聯絡我們" },
@@ -19,7 +19,7 @@ function renderHeader() {
   const header = document.querySelector("header.nav");
   const current = document.body.dataset.page;
   header.innerHTML = `
-    <a class="brand" href="index.html">
+    <a class="brand" href="./">
       <img src="assets/logo.jpg" alt="" width="36" height="36">
       <span>H-bar <small>h 吧</small></span>
     </a>
