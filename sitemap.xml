@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://slegner.github.io/hbarwebsite/</loc>
+    <loc>https://hbartalkscience.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://slegner.github.io/hbarwebsite/about.html</loc>
+    <loc>https://hbartalkscience.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slegner.github.io/hbarwebsite/videos.html</loc>
+    <loc>https://hbartalkscience.com/videos.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slegner.github.io/hbarwebsite/contact.html</loc>
+    <loc>https://hbartalkscience.com/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

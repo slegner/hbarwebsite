@@ -44,7 +44,7 @@ no messages are delivered. After activating, FormSubmit also offers a random ali
 - Each page has its own title, description, canonical URL, Open Graph / Twitter tags and the share image `assets/og-image.png`.
 - `index.html` and `about.html` include schema.org structured data (organisation, website, and both hosts).
 - `robots.txt` and `sitemap.xml` point search engines at every page.
-- All of these use the full site address `https://slegner.github.io/hbarwebsite/`. If the site moves to a custom domain, search-and-replace that address across the repo.
+- All of these use the full site address `https://hbartalkscience.com/` (the custom domain set in `CNAME`). If the domain ever changes, search-and-replace that address across the repo.
 - After the site is live, add it to [Google Search Console](https://search.google.com/search-console) (and Bing Webmaster Tools / Baidu if useful) and submit `sitemap.xml`.
 
 ## Preview locally

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://slegner.github.io/hbarwebsite/sitemap.xml
+Sitemap: https://hbartalkscience.com/sitemap.xml
