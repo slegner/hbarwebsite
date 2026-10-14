@@ -8,16 +8,36 @@ A plain static site (no build step) hosted on GitHub Pages.
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | The page |
-| `assets/style.css`, `assets/main.js` | Styling, video grid, EN/中文 toggle |
-| `data/videos.json` | Video list rendered on the page |
+| `index.html` | Home: hero, Vision 2040 banner, latest 3 videos, short about, call to action |
+| `videos.html` | All videos, filterable by English / 中文 |
+| `about.html` | Vision, why a bar, and the team (Wei-Ning & Sinah) |
+| `contact.html` | Contact form (sent via [FormSubmit](https://formsubmit.co) to hbartalkscience@gmail.com) |
+| `assets/site.js` | Shared header, footer and the EN / 简 / 繁 switch |
+| `assets/lang.js` | Picks the language before the page renders (saved choice, else browser language) |
+| `assets/videos.js` | Renders the video grid |
+| `assets/people/` | Profile photos |
+| `data/videos.json` | Video list (auto-updated) |
 | `scripts/update_videos.py` | Pulls new uploads from the channel's RSS feed into `data/videos.json` |
 | `.github/workflows/update-videos.yml` | Runs the script daily and commits any new videos |
 
 ## Editing
 
-- **Text:** English lives in `index.html`; Chinese translations are in the `I18N` object at the top of `assets/main.js` (keyed by each element's `data-i18n`).
+- **Text:** every piece of page text appears three times, side by side:
+  ```html
+  <span data-l="en">Videos</span>
+  <span data-l="zh-Hans">视频</span>
+  <span data-l="zh-Hant">影片</span>
+  ```
+  Only the one matching the selected language is shown. Nav and footer links live in the `NAV` list in `assets/site.js`.
+- **New page:** copy an existing page, change `<body data-page="...">`, and add it to `NAV` in `assets/site.js`.
 - **Videos:** added automatically. To refresh by hand: `python3 scripts/update_videos.py`. Older videos are kept even after they drop out of the feed (which only shows the latest 15).
+
+## Contact form
+
+The form posts to FormSubmit, which emails each message to hbartalkscience@gmail.com — no server needed.
+The **first** submission triggers a one-time activation email to that inbox; click the link in it, otherwise
+no messages are delivered. After activating, FormSubmit also offers a random alias you can put in the form's
+`action` instead of the address itself, to keep it out of the page source.
 
 ## Preview locally
 

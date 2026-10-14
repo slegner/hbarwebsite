@@ -4,93 +4,119 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>H-bar · Talk Science in a Bar</title>
-  <meta name="description" content="H-bar (h 吧) — science served like cocktails. Bilingual (English / 中文) physics and science videos by Wei-Ning Deng and Sinah Legner.">
+  <meta name="description" content="H-bar Talk Science (H吧聊物理) — science served like cocktails. Science videos in English and Chinese.">
   <meta property="og:title" content="H-bar · Talk Science in a Bar">
-  <meta property="og:description" content="Science served like cocktails — bilingual physics and science videos.">
+  <meta property="og:description" content="Science served like cocktails — videos in English and Chinese.">
   <meta property="og:image" content="assets/logo.jpg">
   <link rel="icon" href="assets/logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+SC:wght@700;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/lang.js"></script>
 </head>
-<body>
-  <header class="nav">
-    <a class="brand" href="#top">
-      <img src="assets/logo.jpg" alt="" width="36" height="36">
-      <span>H-bar <small>h 吧</small></span>
-    </a>
-    <nav>
-      <a href="#videos" data-i18n="nav.videos">On tap</a>
-      <a href="#about" data-i18n="nav.about">About</a>
-      <a href="#hosts" data-i18n="nav.hosts">Bartenders</a>
-      <button class="lang-toggle" type="button" aria-label="Switch language">中文</button>
-    </nav>
-  </header>
+<body data-page="home">
+  <header class="nav"></header>
 
-  <main id="top">
+  <main>
     <section class="hero">
-      <p class="eyebrow" data-i18n="hero.eyebrow">Welcome to the h-bar</p>
-      <h1 data-i18n="hero.title">Talk science<br>in a bar.</h1>
-      <p class="lede" data-i18n="hero.lede">No dusty textbooks — just big ideas from the universe, mixed into easy-drinking “cocktails” with vivid analogies. Pull up a chair.</p>
-      <div class="cta">
-        <a class="btn primary" href="https://www.youtube.com/@H-bartalkScienceH?sub_confirmation=1" target="_blank" rel="noopener" data-i18n="hero.subscribe">Subscribe on YouTube</a>
-        <a class="btn" href="#videos" data-i18n="hero.browse">See what’s on tap</a>
-      </div>
-      <div class="hbar" aria-hidden="true">ħ</div>
-    </section>
-
-    <section id="videos" class="section">
-      <div class="section-head">
-        <h2 data-i18n="videos.title">On tap</h2>
-        <div class="filters" role="tablist">
-          <button type="button" class="chip active" data-filter="all" data-i18n="videos.all">All</button>
-          <button type="button" class="chip" data-filter="en">English</button>
-          <button type="button" class="chip" data-filter="zh">中文</button>
+      <div class="hero-text">
+        <p class="eyebrow">
+          <span data-l="en">Welcome to the h-bar</span>
+          <span data-l="zh-Hans">欢迎来到 h 吧</span>
+          <span data-l="zh-Hant">歡迎來到 h 吧</span>
+        </p>
+        <h1>
+          <span data-l="en">Pull up a chair.<br>Let’s talk science.</span>
+          <span data-l="zh-Hans">坐下来，<br>聊点科学吧。</span>
+          <span data-l="zh-Hant">坐下來，<br>聊點科學吧。</span>
+        </h1>
+        <p class="lede">
+          <span data-l="en">From the tiniest particles to the far reaches of the universe, we talk about new discoveries — and the questions that make you stop and ask “why?” Some already have answers; others are still worth puzzling over together.</span>
+          <span data-l="zh-Hans">从微小的粒子到遥远的宇宙，我们聊新的发现，也聊那些让人忍不住问“为什么”的事。有些问题已经有了答案，有些还值得一起琢磨。</span>
+          <span data-l="zh-Hant">從微小的粒子到遙遠的宇宙，我們聊新的發現，也聊那些讓人忍不住問「為什麼」的事。有些問題已經有了答案，有些還值得一起琢磨。</span>
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="https://www.youtube.com/@H-bartalkScienceH?sub_confirmation=1" target="_blank" rel="noopener">
+            <span data-l="en">Subscribe on YouTube</span>
+            <span data-l="zh-Hans">订阅 YouTube 频道</span>
+            <span data-l="zh-Hant">訂閱 YouTube 頻道</span>
+          </a>
+          <a class="btn" href="videos.html">
+            <span data-l="en">See what’s on tap</span>
+            <span data-l="zh-Hans">看看今天有什么</span>
+            <span data-l="zh-Hant">看看今天有什麼</span>
+          </a>
         </div>
       </div>
-      <div id="video-grid" class="grid"></div>
-      <div class="more-wrap">
-        <button id="load-more" class="btn" type="button" data-i18n="videos.more">Pour another round</button>
+      <img class="hero-mascot" src="assets/mascot.svg" alt="" width="2444" height="1809">
+    </section>
+
+    <section class="banner">
+      <div class="banner-inner">
+        <blockquote>
+          <span data-l="en"><span class="accent">Leave the repetition to AI.</span><br>Give the thinking back to humans.</span>
+          <span data-l="zh-Hans"><span class="accent">把重复劳动交给 AI，</span><br>把深度思考还给人类。</span>
+          <span data-l="zh-Hant"><span class="accent">把重複勞動交給 AI，</span><br>把深度思考還給人類。</span>
+        </blockquote>
+        <a href="about.html#vision">
+          <span data-l="en">Read our vision →</span>
+          <span data-l="zh-Hans">阅读我们的愿景 →</span>
+          <span data-l="zh-Hant">閱讀我們的願景 →</span>
+        </a>
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <h2 data-i18n="about.title">Why a bar?</h2>
-      <div class="about-body">
-        <p data-i18n="about.p1">Many people think science is just a pile of cold, complicated equations. To us, the way the universe works is incredibly beautiful — and best discussed somewhere relaxed, like your favourite local pub.</p>
-        <p data-i18n="about.p2">The name is a nod to ħ (“h-bar”), the reduced Planck constant at the heart of quantum mechanics. Every episode is a house special: one big idea, from magic-angle graphene to neutrinos at the South Pole, served in English and in Mandarin.</p>
+    <section class="section">
+      <div class="section-head">
+        <h2>
+          <span data-l="en">Today’s special</span>
+          <span data-l="zh-Hans">今日特调</span>
+          <span data-l="zh-Hant">今日特調</span>
+        </h2>
+        <a class="link-arrow" href="videos.html">
+          <span data-l="en">All videos →</span>
+          <span data-l="zh-Hans">全部视频 →</span>
+          <span data-l="zh-Hant">全部影片 →</span>
+        </a>
       </div>
+      <div class="grid" data-videos data-limit="3"></div>
     </section>
 
-    <section id="hosts" class="section">
-      <h2 data-i18n="hosts.title">Your bartenders</h2>
-      <div class="hosts">
-        <article class="host">
-          <div class="avatar" aria-hidden="true">WD</div>
-          <h3>Wei-Ning Deng <span>鄧為寧</span></h3>
-          <p data-i18n="hosts.wd">Physics PhD from the Cavendish Laboratory, University of Cambridge, specialising in theoretical physics and cosmology.</p>
-          <a href="https://weiningdeng.com/" target="_blank" rel="noopener">weiningdeng.com →</a>
-        </article>
-        <article class="host">
-          <div class="avatar" aria-hidden="true">SL</div>
-          <h3>Sinah Legner</h3>
-          <p data-i18n="hosts.sl">Co-host of H-bar. <!-- TODO: add Sinah's bio --></p>
-        </article>
+    <section class="cta-band">
+      <h2>
+        <span data-l="en">Grab a drink and join the conversation.</span>
+        <span data-l="zh-Hans">端起一杯，加入我们的对话。</span>
+        <span data-l="zh-Hant">端起一杯，加入我們的對話。</span>
+      </h2>
+      <p>
+        <span data-l="en">Subscribe for new episodes in English and Chinese, or meet the people behind the bar.</span>
+        <span data-l="zh-Hans">订阅频道收看中英双语的新节目，或来认识一下吧台后面的我们。</span>
+        <span data-l="zh-Hant">訂閱頻道收看中英雙語的新節目，或來認識一下吧台後面的我們。</span>
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="https://www.youtube.com/@H-bartalkScienceH?sub_confirmation=1" target="_blank" rel="noopener">
+          <span data-l="en">Subscribe on YouTube</span>
+          <span data-l="zh-Hans">订阅 YouTube 频道</span>
+          <span data-l="zh-Hant">訂閱 YouTube 頻道</span>
+        </a>
+        <a class="btn" href="about.html#team">
+          <span data-l="en">Meet the team</span>
+          <span data-l="zh-Hans">认识我们</span>
+          <span data-l="zh-Hant">認識我們</span>
+        </a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> H-bar · Wei-Ning Deng &amp; Sinah Legner</p>
-    <p><a href="https://www.youtube.com/@H-bartalkScienceH" target="_blank" rel="noopener">YouTube</a></p>
-  </footer>
+  <footer class="footer"></footer>
 
   <dialog id="player" aria-label="Video player">
     <button class="close" type="button" aria-label="Close">×</button>
     <div class="frame"></div>
   </dialog>
 
-  <script src="assets/main.js"></script>
+  <script src="assets/site.js"></script>
+  <script src="assets/videos.js"></script>
 </body>
 </html>
