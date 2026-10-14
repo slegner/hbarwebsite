@@ -154,6 +154,11 @@ html[lang^="zh"] .eyebrow { text-transform: none; letter-spacing: 0.04em; }
 }
 .tile p { color: var(--muted); margin: 0; }
 
+/* Figure above the vision pillars */
+.diagram { margin: 0 0 28px; }
+.diagram img { width: 100%; height: auto; border-radius: 8px; }
+.diagram figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 10px; text-align: center; }
+
 /* Vision pillars: one block, items separated by dividers */
 .pillars { background: var(--bg-raised); border: 1px solid var(--line); border-radius: 8px; }
 .pillar { padding: 26px 32px; }
