@@ -154,6 +154,26 @@ html[lang^="zh"] .eyebrow { text-transform: none; letter-spacing: 0.04em; }
 }
 .tile p { color: var(--muted); margin: 0; }
 
+/* AI tools page: the embedded paper atlas */
+.tools { display: flex; flex-direction: column; gap: 16px; }
+.tool { border: 1px solid var(--line); border-radius: 12px; background: var(--bg-raised); }
+.tool > summary { list-style: none; display: flex; align-items: flex-start; gap: 16px; padding: 22px 26px; cursor: pointer; border-radius: 12px; }
+.tool > summary::-webkit-details-marker { display: none; }
+.tool > summary:hover { background: rgba(232, 163, 61, 0.05); }
+.tool > summary:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.tool-head { flex: 1; min-width: 0; }
+.tool h2 { font: 700 clamp(1.5rem, 3.4vw, 2.1rem)/1.2 var(--font); margin: 0 0 8px; }
+.tool-desc { display: block; color: var(--muted); font-size: 1.02rem; max-width: 72ch; }
+.tool-chev { color: var(--amber); font-size: 1.9rem; line-height: 1; padding-top: 6px; transition: transform .2s; }
+.tool[open] > summary .tool-chev { transform: rotate(90deg); }
+.tool-body { padding: 0 26px 26px; }
+.embed-links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.embed { margin: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--bg-raised); }
+.embed-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px;
+             padding: 12px 18px; border-bottom: 1px solid var(--line); font-size: 0.92rem; color: var(--muted); }
+.embed iframe { display: block; width: 100%; height: min(880px, 85vh); border: 0; background: #f7f6f2; }
+@media (max-width: 640px) { .embed iframe { height: 78vh; } .tool > summary { padding: 18px; } .tool-body { padding: 0 12px 12px; } }
+
 /* Figure above the vision pillars */
 .diagram { margin: 0 0 28px; }
 .diagram img { width: 100%; height: auto; border-radius: 8px; }
@@ -166,6 +186,7 @@ html[lang^="zh"] .eyebrow { text-transform: none; letter-spacing: 0.04em; }
 .pillar h3 { font: 800 clamp(1.4rem, 3vw, 1.7rem)/1.25 var(--font); margin: 0 0 8px; color: var(--text); }
 html[lang^="zh"] .pillar h3 { font-weight: 900; }
 .pillar p { color: var(--muted); margin: 0; }
+.pillar p.pillar-link { margin-top: 10px; }
 .pillar strong { color: var(--text); font-weight: 600; }
 
 /* People */

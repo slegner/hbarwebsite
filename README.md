@@ -11,6 +11,8 @@ A plain static site (no build step) hosted on GitHub Pages.
 | `index.html` | Home: hero, Vision 2040 banner, latest 3 videos, short about, call to action |
 | `videos.html` | All videos, filterable by English / 中文 |
 | `about.html` | Vision, why a bar, and the team (Wei-Ning & Sinah) |
+| `ai-tools.html` | AI tools: the paper atlas, with the TorC atlas embedded as a live example |
+| `tools/torc-atlas.html` | The TorC paper atlas (self-contained; built with [paper-atlas](https://github.com/slegner/paper-atlas)) |
 | `contact.html` | Contact form (sent via [FormSubmit](https://formsubmit.co) to hbartalkscience@gmail.com) |
 | `assets/site.js` | Shared header, footer and the EN / 简 / 繁 switch |
 | `assets/lang.js` | Picks the language before the page renders (saved choice, else browser language) |

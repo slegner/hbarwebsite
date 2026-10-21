@@ -5,6 +5,7 @@ const NAV = [
   { page: "home", href: "./", en: "Home", hans: "首页", hant: "首頁" },
   { page: "about", href: "about.html", en: "About", hans: "关于我们", hant: "關於我們" },
   { page: "videos", href: "videos.html", en: "Videos", hans: "视频", hant: "影片" },
+  { page: "tools", href: "ai-tools.html", en: "AI tools", hans: "AI 工具", hant: "AI 工具" },
   { page: "contact", href: "contact.html", en: "Contact", hans: "联系我们", hant: "聯絡我們" },
 ];
 
