@@ -172,6 +172,17 @@ html[lang^="zh"] .eyebrow { text-transform: none; letter-spacing: 0.04em; }
 .embed-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px;
              padding: 12px 18px; border-bottom: 1px solid var(--line); font-size: 0.92rem; color: var(--muted); }
 .embed iframe { display: block; width: 100%; height: min(880px, 85vh); border: 0; background: #f7f6f2; }
+/* Playground: description beside a picture, taller frame, dark to match the site */
+.tool-intro { display: flex; gap: 32px; align-items: center; padding-bottom: 44px; }
+.tool-intro .tool-desc { flex: 1 1 0; }
+.tool-desc .para { display: block; margin: 0 0 10px; }
+.tool-desc .para:last-child { margin-bottom: 0; }
+.tool-pic { flex: 0 0 min(40%, 400px); display: block; position: relative; }
+.tool-pic img { display: block; width: 100%; height: auto; }
+/* caption hangs below the map so the text centres on the map itself */
+.tool-credit { position: absolute; top: 100%; left: 0; right: 0; display: block; margin-top: 8px; text-align: center; font-size: 0.78rem; color: var(--muted); line-height: 1.45; }
+@media (max-width: 760px) { .tool-intro { flex-direction: column; align-items: stretch; gap: 14px; padding-bottom: 0; } .tool-pic { flex-basis: auto; } .tool-credit { position: static; } }
+.embed iframe.tall { height: min(1180px, 92vh); background: var(--bg); }
 @media (max-width: 640px) { .embed iframe { height: 78vh; } .tool > summary { padding: 18px; } .tool-body { padding: 0 12px 12px; } }
 
 /* Figure above the vision pillars */

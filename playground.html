@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playground · H-bar Talk Science (H吧聊物理)</title>
+  <meta name="description" content="Interactive physics to play with: move the six numbers of the standard cosmological model and watch the cosmic microwave background change, then try to find Planck's best fit yourself. 互動物理遊樂場。">
+  <link rel="canonical" href="https://hbartalkscience.com/playground.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="H-bar Talk Science (H吧聊物理)">
+  <meta property="og:title" content="Playground · H-bar Talk Science (H吧聊物理)">
+  <meta property="og:description" content="Interactive physics to play with: move the six numbers of the standard cosmological model and watch the cosmic microwave background change, then try to find Planck's best fit yourself. 互動物理遊樂場。">
+  <meta property="og:url" content="https://hbartalkscience.com/playground.html">
+  <meta property="og:image" content="https://hbartalkscience.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Playground · H-bar Talk Science (H吧聊物理)">
+  <meta name="twitter:description" content="Interactive physics to play with: move the six numbers of the standard cosmological model and watch the cosmic microwave background change, then try to find Planck's best fit yourself. 互動物理遊樂場。">
+  <meta name="twitter:image" content="https://hbartalkscience.com/assets/og-image.png">
+  <meta name="theme-color" content="#12100e">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/lang.js"></script>
+</head>
+<body data-page="playground">
+  <header class="nav"></header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">
+        <span data-l="en">Interactive physics</span>
+        <span data-l="zh-Hans">互动物理</span>
+        <span data-l="zh-Hant">互動物理</span>
+      </p>
+      <h1>
+        <span data-l="en">Playground</span>
+        <span data-l="zh-Hans">游乐场</span>
+        <span data-l="zh-Hant">遊樂場</span>
+      </h1>
+      <p class="lede">
+        <span data-l="en">Physics you can touch: move the knobs of the universe and see what happens.</span>
+        <span data-l="zh-Hans">动手玩物理：转一转宇宙的旋钮，看看会发生什么。</span>
+        <span data-l="zh-Hant">動手玩物理：轉一轉宇宙的旋鈕，看看會發生什麼。</span>
+      </p>
+    </section>
+
+    <section class="section tools">
+      <!-- One foldable block per toy; add `open` to show it unfolded by default. -->
+      <details class="tool" id="cmb-mover" open>
+        <summary>
+          <span class="tool-head">
+            <h2>
+              <span data-l="en">CMB power spectrum glider</span>
+              <span data-l="zh-Hans">宇宙微波背景功率谱调节器</span>
+              <span data-l="zh-Hant">宇宙微波背景功率譜調節器</span>
+            </h2>
+            <span class="tool-intro">
+            <span class="tool-desc">
+              <span data-l="en">
+                <span class="para">The cosmic microwave background (CMB) is the oldest light in the universe. Its tiny hot and cold spots began as quantum fluctuations in the very early universe (<a href="https://arxiv.org/abs/1807.06211" target="_blank" rel="noopener">Planck 2018 results X</a>). Just six numbers set their pattern (<a href="https://arxiv.org/abs/1807.06209" target="_blank" rel="noopener">Planck 2018 results VI</a>): move them and compare with what the Planck satellite measured.</span>
+                <span class="para">In “Find the fit” the numbers are hidden: fit the data first, then reveal the answer, much like the <em>blind analyses</em> cosmologists use to keep their expectations out of the result (<a href="https://arxiv.org/abs/1911.05929" target="_blank" rel="noopener">Muir et al. 2020</a>).</span>
+              </span>
+              <span data-l="zh-Hans">
+                <span class="para">宇宙微波背景（CMB）是宇宙中最古老的光。它上面微小的冷热斑点源自极早期宇宙的量子涨落(<a href="https://arxiv.org/abs/1807.06211" target="_blank" rel="noopener">Planck 2018 results X</a>)。只要六个数字就能决定这些斑点的图样(<a href="https://arxiv.org/abs/1807.06209" target="_blank" rel="noopener">Planck 2018 results VI</a>)：拖动它们，与普朗克卫星的观测数据比较。</span>
+                <span class="para">在「找出最佳拟合」中，这六个数字会被隐藏：先拟合数据，再揭晓答案——就像宇宙学家为了不让预期影响结果而采用的<em>盲分析</em>(<a href="https://arxiv.org/abs/1911.05929" target="_blank" rel="noopener">Muir et al. 2020</a>)。</span>
+              </span>
+              <span data-l="zh-Hant">
+                <span class="para">宇宙微波背景（CMB）是宇宙中最古老的光。它上面微小的冷熱斑點源自極早期宇宙的量子漲落(<a href="https://arxiv.org/abs/1807.06211" target="_blank" rel="noopener">Planck 2018 results X</a>)。只要六個數字就能決定這些斑點的圖樣(<a href="https://arxiv.org/abs/1807.06209" target="_blank" rel="noopener">Planck 2018 results VI</a>)：拖動它們，與普朗克衛星的觀測數據比較。</span>
+                <span class="para">在「找出最佳擬合」中，這六個數字會被隱藏：先擬合數據，再揭曉答案——就像宇宙學家為了不讓預期影響結果而採用的<em>盲分析</em>(<a href="https://arxiv.org/abs/1911.05929" target="_blank" rel="noopener">Muir et al. 2020</a>)。</span>
+              </span>
+            </span>
+            <span class="tool-pic">
+              <img src="assets/planck-cmb.png" width="900" height="449" loading="lazy"
+                   alt="Planck's all-sky map of the cosmic microwave background: a speckled oval of slightly hotter (orange) and colder (blue) spots">
+              <span class="tool-credit">
+                <span data-l="en">The CMB sky seen by Planck.</span>
+                <span data-l="zh-Hans">普朗克卫星看到的宇宙微波背景。</span>
+                <span data-l="zh-Hant">普朗克衛星看到的宇宙微波背景。</span>
+                Image: <a href="https://noirlab.edu/public/images/CMB" target="_blank" rel="noopener">ESA and the Planck Collaboration</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" title="Background made transparent by H-bar">CC BY 4.0</a>
+              </span>
+            </span>
+            </span>
+          </span>
+          <span class="tool-chev" aria-hidden="true">▸</span>
+        </summary>
+        <div class="tool-body">
+          <figure class="embed">
+            <div class="embed-bar">
+              <span class="embed-title">
+                <span data-l="en">Planck 2018 data · spectra from a neural-network emulator trained on CAMB</span>
+                <span data-l="zh-Hans">普朗克 2018 数据 · 功率谱由以 CAMB 训练的神经网络模拟器计算</span>
+                <span data-l="zh-Hant">普朗克 2018 數據 · 功率譜由以 CAMB 訓練的神經網路模擬器計算</span>
+              </span>
+              <span class="embed-links">
+                <a class="link-arrow" href="tools/cmb-mover.html" target="_blank" rel="noopener">
+                  <span data-l="en">Open full screen ↗</span>
+                  <span data-l="zh-Hans">全屏打开 ↗</span>
+                  <span data-l="zh-Hant">全螢幕開啟 ↗</span>
+                </a>
+              </span>
+            </div>
+            <iframe class="tall" src="tools/cmb-mover.html?theme=dark&amp;embed=1" title="CMB power spectrum glider: move the six ΛCDM parameters and compare with Planck 2018 data" loading="lazy"></iframe>
+          </figure>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script src="assets/site.js"></script>
+  <script>
+    // Keep the embedded tool in the site's language (EN / 简 / 繁)
+    const cmb = document.querySelector("#cmb-mover iframe");
+    const sendLang = () => cmb.contentWindow && cmb.contentWindow.postMessage({ hbarLang: document.documentElement.lang }, "*");
+    cmb.addEventListener("load", sendLang);
+    document.addEventListener("hbar:lang", sendLang);
+  </script>
+</body>
+</html>
