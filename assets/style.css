@@ -167,6 +167,11 @@ html[lang^="zh"] .eyebrow { text-transform: none; letter-spacing: 0.04em; }
 .tool-chev { color: var(--amber); font-size: 1.9rem; line-height: 1; padding-top: 6px; transition: transform .2s; }
 .tool[open] > summary .tool-chev { transform: rotate(90deg); }
 .tool-body { padding: 0 26px 26px; }
+/* Screenshot of the demo, shown only while its block is folded */
+.tool-thumb { flex: 0 0 300px; width: 300px; height: auto; border: 1px solid var(--line); border-radius: 8px; }
+.tool[open] .tool-thumb { display: none; }
+.tool:not([open]) .tool-pic { display: none; }
+.tool:not([open]) .tool-intro { padding-bottom: 0; }
 .embed-links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 .embed { margin: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--bg-raised); }
 .embed-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px;
@@ -183,6 +188,7 @@ html[lang^="zh"] .eyebrow { text-transform: none; letter-spacing: 0.04em; }
 .tool-credit { position: absolute; top: 100%; left: 0; right: 0; display: block; margin-top: 8px; text-align: center; font-size: 0.78rem; color: var(--muted); line-height: 1.45; }
 @media (max-width: 760px) { .tool-intro { flex-direction: column; align-items: stretch; gap: 14px; padding-bottom: 0; } .tool-pic { flex-basis: auto; } .tool-credit { position: static; } }
 .embed iframe.tall { height: min(1180px, 92vh); background: var(--bg); }
+@media (max-width: 760px) { .tool > summary { flex-wrap: wrap; } .tool-head { flex-basis: 0; } .tool-thumb { order: 1; flex: 1 1 100%; width: 100%; } }
 @media (max-width: 640px) { .embed iframe { height: 78vh; } .tool > summary { padding: 18px; } .tool-body { padding: 0 12px 12px; } }
 
 /* Figure above the vision pillars */

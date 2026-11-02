@@ -11,15 +11,17 @@ A plain static site (no build step) hosted on GitHub Pages.
 | `index.html` | Home: hero, Vision 2040 banner, latest 3 videos, short about, call to action |
 | `videos.html` | All videos, filterable by English / 中文 |
 | `about.html` | Vision, why a bar, and the team (Wei-Ning & Sinah) |
-| `ai-tools.html` | AI tools: the paper atlas, with the TorC atlas embedded as a live example |
+| `ai-tools.html` | AI tools: the paper atlas, with the TorC atlas embedded as a live example, and the PDF splitter, with a ΛCDM corner plot |
 | `playground.html` | Playground: interactive physics, starting with the CMB power spectrum glider |
 | `tools/cmb-mover.html` | CMB power spectrum glider + "Find the fit" game (self-contained; built in `Scicomm/cmb-mover`, copy `index.html` here after rebuilding). `?theme=dark` forces dark, `?embed=1` hides its own title, `#game` opens the challenge |
 | `tools/torc-atlas.html` | The TorC paper atlas (self-contained; built with [paper-atlas](https://github.com/slegner/paper-atlas)) |
+| `tools/pdf-splitter-demo.html` | The PDF splitter demo (self-contained; `viewer.html` built with [pdf-splitter](https://github.com/slegner/pdf-splitter) from `LCDM_Planck_DESI_SH0ES.pdf`) |
 | `contact.html` | Contact form (sent via [FormSubmit](https://formsubmit.co) to hbartalkscience@gmail.com) |
 | `assets/site.js` | Shared header, footer and the EN / 简 / 繁 switch |
 | `assets/lang.js` | Picks the language before the page renders (saved choice, else browser language) |
 | `assets/videos.js` | Renders the video grid |
 | `assets/people/` | Profile photos |
+| `assets/thumbs/` | Screenshot of each demo, shown while its block is folded (720×450 WebP); retake after a demo's look changes |
 | `assets/planck-cmb.png` | Planck CMB map for the Playground, background made transparent (ESA and the Planck Collaboration, CC BY 4.0 — keep the credit line) |
 | `data/videos.json` | Video list (auto-updated) |
 | `scripts/update_videos.py` | Pulls new uploads from the channel's RSS feed into `data/videos.json` |

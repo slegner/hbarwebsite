@@ -53,8 +53,8 @@
     </section>
 
     <section class="section tools">
-      <!-- One foldable block per tool; add `open` to show a tool unfolded by default. -->
-      <details class="tool" id="paper-atlas" open>
+      <!-- One foldable block per tool, folded by default, with a screenshot (assets/thumbs/) shown while folded. -->
+      <details class="tool" id="paper-atlas">
         <summary>
           <span class="tool-head">
             <h2>
@@ -68,6 +68,8 @@
               <span data-l="zh-Hant">把一篇論文變成一張互動地圖：它問了什麼、發現了什麼、背後有哪些概念，以及每個概念從哪裡開始讀。下面是 Sinah 的 TorC 論文，歡迎點點看。</span>
             </span>
           </span>
+          <img class="tool-thumb" src="assets/thumbs/paper-atlas.webp" width="720" height="450" loading="lazy"
+               alt="Screenshot of the paper atlas: a mind map of circles around the TorC paper, with its question and answer">
           <span class="tool-chev" aria-hidden="true">▸</span>
         </summary>
         <div class="tool-body">
@@ -88,6 +90,46 @@
               </span>
             </div>
             <iframe src="tools/torc-atlas.html" title="Interactive paper atlas of the TorC paper" loading="lazy"></iframe>
+          </figure>
+        </div>
+      </details>
+
+      <details class="tool" id="pdf-splitter">
+        <summary>
+          <span class="tool-head">
+            <h2>
+              <span data-l="en">PDF splitter</span>
+              <span data-l="zh-Hans">PDF 图表拆分器</span>
+              <span data-l="zh-Hant">PDF 圖表拆分器</span>
+            </h2>
+            <span class="tool-desc">
+              <span data-l="en">Turns a PDF of plots into an interactive page: pick two parameters to see their contour, switch datasets on and off, and download the view as a vector SVG. It’s a plain Python script, so no AI runs when you use it. Here it is on a ΛCDM corner plot; click around.</span>
+              <span data-l="zh-Hans">把 PDF 图表变成互动网页：选两个参数查看它们的等高线图，开关各个数据集，并把当前视图下载为矢量 SVG。它是一个普通的 Python 脚本，使用时不运行 AI。下面是一张 ΛCDM 角图，欢迎点点看。</span>
+              <span data-l="zh-Hant">把 PDF 圖表變成互動網頁：選兩個參數查看它們的等高線圖，開關各個資料集，並把目前視圖下載為向量 SVG。它是一個普通的 Python 腳本，使用時不運行 AI。下面是一張 ΛCDM 角圖，歡迎點點看。</span>
+            </span>
+          </span>
+          <img class="tool-thumb" src="assets/thumbs/pdf-splitter.webp" width="720" height="450" loading="lazy"
+               alt="Screenshot of the PDF splitter viewer: parameter and dataset controls beside the H0 vs Ωm contour panel">
+          <span class="tool-chev" aria-hidden="true">▸</span>
+        </summary>
+        <div class="tool-body">
+          <figure class="embed">
+            <div class="embed-bar">
+              <span class="embed-title">ΛCDM constraints from Planck 2018, DESI DR2 and SH0ES</span>
+              <span class="embed-links">
+                <a class="link-arrow" href="https://github.com/slegner/pdf-splitter" target="_blank" rel="noopener">
+                  <span data-l="en">Code on GitHub ↗</span>
+                  <span data-l="zh-Hans">GitHub 源代码 ↗</span>
+                  <span data-l="zh-Hant">GitHub 原始碼 ↗</span>
+                </a>
+                <a class="link-arrow" href="tools/pdf-splitter-demo.html" target="_blank" rel="noopener">
+                  <span data-l="en">Open full screen ↗</span>
+                  <span data-l="zh-Hans">全屏打开 ↗</span>
+                  <span data-l="zh-Hant">全螢幕開啟 ↗</span>
+                </a>
+              </span>
+            </div>
+            <iframe src="tools/pdf-splitter-demo.html" title="Interactive PDF splitter viewer of a ΛCDM corner plot" loading="lazy"></iframe>
           </figure>
         </div>
       </details>
